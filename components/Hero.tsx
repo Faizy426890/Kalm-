@@ -30,7 +30,7 @@ export default function Hero() {
       <div style={{ position: 'absolute', top: 0, right: 0, width: '55%', height: '100%', overflow: 'hidden', pointerEvents: 'none' }}>
         <Image src={HERO_IMG} alt="bg" fill priority
           className="hero-bg-fade"
-          style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.08 }}
+          style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.7 }}
           sizes="55vw"
         />
       </div>
