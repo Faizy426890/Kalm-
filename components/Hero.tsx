@@ -27,10 +27,10 @@ export default function Hero() {
       }} />
 
       {/* Faded full-bleed background image */}
-      <div style={{ position: 'absolute', top: 0, right: 0, width: '55%', height: '100%', overflow: 'hidden', pointerEvents: 'none' }}>
+      <div style={{ position: 'absolute', top: 0, right: 0, width: '65%', height: '100%', overflow: 'hidden', pointerEvents: 'none' }}>
         <Image src={HERO_IMG} alt="bg" fill priority
           className="hero-bg-fade"
-          style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.7 }}
+          style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.5 }}
           sizes="55vw"
         />
       </div>
