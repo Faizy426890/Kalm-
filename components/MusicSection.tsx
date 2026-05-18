@@ -7,46 +7,46 @@ const PROFILE = 'https://res.cloudinary.com/daxjhteb5/image/upload/v1777752217/W
 
 const TRACKS = [
   {
-    badge: 'New', badgeClass: 'badge-new',
-    tag: 'Album · 2025', title: 'Till Next Time',
-    meta: '10 Songs · 36 min · Short Film',
-    href: 'https://open.spotify.com/artist/1vOQzKkm4fV56IzcaMHVoo',
-    img: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80',
-  },
-  {
-    badge: 'Featured', badgeClass: 'badge-feat',
-    tag: 'Collab · 2020', title: 'Dear Bad Cops ft. Boom Marley',
-    meta: 'Social Justice · Debut Collab',
-    href: 'https://open.spotify.com/artist/1vOQzKkm4fV56IzcaMHVoo',
-    img: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80',
-  },
-  {
-    badge: 'Catalog', badgeClass: 'badge-live',
-    tag: 'Weekly Drops · 2024', title: '98-Record Streak',
-    meta: 'A song every week · 1 year',
-    href: 'https://youtube.com/@gmjamesmusic',
-    img: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80',
-  },
-  {
     badge: 'Film', badgeClass: 'badge-gold',
-    tag: 'Short Film · 2025', title: 'Till Next Time — Documentary',
-    meta: 'Album creation · Behind the scenes',
-    href: 'https://youtube.com/@gmjamesmusic',
-    img: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&q=80',
+    tag: 'Short Film · 2025', title: 'Till Next Time The Movie',
+    meta: 'Album + Short Film · GM James',
+    href: 'https://www.youtube.com/watch?v=Z0Vz-bSRLTw',
+    img: 'https://i.ytimg.com/vi/Z0Vz-bSRLTw/hqdefault.jpg',
+  },
+  {
+    badge: 'Single', badgeClass: 'badge-new',
+    tag: 'Single · GM James ft Rob Croft', title: 'New Day',
+    meta: 'ft. Rob Croft',
+    href: 'https://www.youtube.com/watch?v=GncbZwhZnWc',
+    img: 'https://i.ytimg.com/vi/GncbZwhZnWc/hqdefault.jpg',
+  },
+  {
+    badge: 'Collab', badgeClass: 'badge-feat',
+    tag: 'Single · GM James ft Boom Marley', title: 'Blessings',
+    meta: 'ft. Boom Marley',
+    href: 'https://www.youtube.com/watch?v=2FYdT4GoikM',
+    img: 'https://i.ytimg.com/vi/2FYdT4GoikM/hqdefault.jpg',
   },
   {
     badge: 'Single', badgeClass: 'badge-pink',
-    tag: 'Single · 2024', title: 'Vault Picks',
-    meta: 'Best of 800+ vault tracks',
-    href: 'https://open.spotify.com/artist/1vOQzKkm4fV56IzcaMHVoo',
-    img: 'https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=600&q=80',
+    tag: 'Single · GM James ft Rob Croft', title: 'Keep Dreaming',
+    meta: 'ft. Rob Croft',
+    href: 'https://www.youtube.com/watch?v=tIMcteNtcGQ',
+    img: 'https://i.ytimg.com/vi/tIMcteNtcGQ/hqdefault.jpg',
   },
   {
-    badge: 'Live', badgeClass: 'badge-feat',
-    tag: 'Performance', title: 'Live in South Florida',
-    meta: 'Raw energy · Crowd moments',
-    href: 'https://youtube.com/@gmjamesmusic',
-    img: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80',
+    badge: 'Single', badgeClass: 'badge-live',
+    tag: 'Single · GM James ft Freek Van Workum', title: 'Peace with Myself',
+    meta: 'ft. Freek Van Workum',
+    href: 'https://www.youtube.com/watch?v=V0Zq_SMNeCY',
+    img: 'https://i.ytimg.com/vi/V0Zq_SMNeCY/hqdefault.jpg',
+  },
+  {
+    badge: 'Single', badgeClass: 'badge-new',
+    tag: 'Single · GM James ft Freek Van Workum', title: 'God Willing',
+    meta: 'ft. Freek Van Workum',
+    href: 'https://www.youtube.com/watch?v=JTD5MjfxajQ',
+    img: 'https://i.ytimg.com/vi/JTD5MjfxajQ/hqdefault.jpg',
   },
 ]
 
@@ -68,7 +68,7 @@ export default function MusicSection() {
             </Reveal>
             <Reveal direction="right" delay={0.2}>
               <p style={{ marginTop: 8, fontSize: '0.87rem', color: 'var(--text-muted)', maxWidth: 420, lineHeight: 1.7 }}>
-                From the vault of GM James — 98 releases and counting. Real stories, raw rhymes, and an unmatched work ethic.
+                From the vault of GM James. 98 releases and counting. Real stories, raw rhymes, and an unmatched work ethic.
               </p>
             </Reveal>
           </div>

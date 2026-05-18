@@ -6,16 +6,14 @@ import Reveal from './Reveal'
 const ALBUM_IMG = 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200&q=80'
 
 const TRACKLIST = [
-  { num: '01', title: 'Till Next Time (Intro)', time: '3:42' },
-  { num: '02', title: 'No Goodbyes', time: '3:58' },
-  { num: '03', title: 'Vault Memories', time: '4:12' },
-  { num: '04', title: 'South Florida State of Mind', time: '3:35' },
-  { num: '05', title: 'Dear Mama (Legacy)', time: '4:48' },
-  { num: '06', title: '98 Weeks', time: '3:22' },
-  { num: '07', title: 'Continuation', time: '3:55' },
-  { num: '08', title: 'GM James (Identity)', time: '4:01' },
-  { num: '09', title: '800 Strong', time: '3:38' },
-  { num: '10', title: 'Till Next Time (Outro)', time: '4:29' },
+  { num: '01', title: 'Purpose', href: 'https://open.spotify.com/track/7zyEyRDkCVPd2MOmlPKUym' },
+  { num: '02', title: 'Enemies', href: 'https://open.spotify.com/track/07y071eoUPBoBTSumZp05d' },
+  { num: '03', title: 'Blessings', href: 'https://open.spotify.com/track/1RZ3XHzZgnGmRi2tWGo4Fj' },
+  { num: '04', title: 'Moment to Myself', href: 'https://open.spotify.com/track/7yQPJx5I8RUwIfGuIRMpJh' },
+  { num: '05', title: 'Prayers in the Morning', href: 'https://open.spotify.com/track/7EV1iacWdEavUEAuSLcrxR' },
+  { num: '06', title: 'All the Diamonds', href: 'https://open.spotify.com/track/1NnNvil814CNHeWq93sZyI' },
+  { num: '07', title: 'Time is Ticking', href: 'https://open.spotify.com/track/4tMmb2QpB5YL6dm0ygAJI0' },
+  { num: '08', title: 'God Willing', href: 'https://open.spotify.com/track/3tIiSQ45wwRxAIqXBrlqNj' },
 ]
 
 export default function AlbumSection() {
@@ -115,7 +113,7 @@ export default function AlbumSection() {
             <div>
               {TRACKLIST.map((t, i) => (
                 <Reveal key={t.num} direction="right" delay={i * 0.04}>
-                  <a href="https://open.spotify.com/artist/1vOQzKkm4fV56IzcaMHVoo" target="_blank" rel="noopener noreferrer"
+                  <a href={t.href} target="_blank" rel="noopener noreferrer"
                      className="track-row-link"
                      style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '10px 12px', borderRadius: 12, transition: 'all 0.2s', textDecoration: 'none', border: '1px solid transparent' }}
                      onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background='var(--bg-card)'; el.style.borderColor='var(--border)'; (el.querySelector('.t-play') as HTMLElement).style.opacity='1'; }}
@@ -126,7 +124,7 @@ export default function AlbumSection() {
                       <Play size={10} style={{ marginLeft:1 }} />
                     </span>
                     <span style={{ flex:1, fontSize:'0.87rem', fontWeight:500, color:'#fff' }}>{t.title}</span>
-                    <span style={{ fontSize:'0.72rem', color:'var(--text-dim)' }}>{t.time}</span>
+                    <span style={{ fontSize:'0.72rem', color:'#1DB954' }}>Spotify</span>
                   </a>
                 </Reveal>
               ))}
@@ -142,10 +140,10 @@ export default function AlbumSection() {
                   <em>Till Next Time</em> began as GM James's first solo project since 2018. Paired with a short film documenting the album's creation, it reflects both loss and legacy — a phrase that doubles as a mindset.
                 </p>
                 <p style={{ fontSize:'0.83rem', color:'var(--text-muted)', lineHeight:1.75, marginBottom:10 }}>
-                  Following the passing of his mother, GM James went all in. The album is his answer to grief — not silence, but creation. Not goodbye, but continuation.
+                  Following the passing of his mother, GM James went all in. The album is his answer to grief. Not silence, but creation. Not goodbye, but continuation.
                 </p>
                 <p style={{ fontSize:'0.83rem', fontStyle:'italic', color:'var(--purple-light)' }}>
-                  "Whether for the music still waiting in the vault, the loved ones gone too soon, or the family that fuels him forward — Till Next Time."
+                  "Whether for the music still waiting in the vault, the loved ones gone too soon, or the family that fuels him forward. Till Next Time."
                 </p>
               </div>
             </Reveal>

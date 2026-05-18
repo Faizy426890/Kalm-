@@ -73,7 +73,7 @@ export default function Hero() {
           >
             Born James Reuschle in South Florida. 98 records in a single year. 800+
             songs in the vault. A debut solo album born from grief, love, and legacy.
-            GM James signs off the same way every time —{' '}
+            GM James signs off the same way every time.{' '}
             <em style={{ color: '#fff' }}>Till Next Time.</em>
           </motion.p>
 

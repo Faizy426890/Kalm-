@@ -73,7 +73,7 @@ export default function ConnectSection() {
             </Reveal>
             <Reveal direction="right" delay={0.15}>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.75, marginBottom: 28 }}>
-                Booking inquiries, press features, collaborations, or just want to show love — reach out directly.
+                Booking inquiries, press features, collaborations, or just want to show love. Reach out directly.
               </p>
             </Reveal>
 

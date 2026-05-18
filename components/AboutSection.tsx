@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Reveal from './Reveal'
 
-const PROFILE = 'https://res.cloudinary.com/daxjhteb5/image/upload/v1777752217/WhatsApp_Image_2026-05-03_at_00.47.51_wkkium.jpg'
+const PROFILE = 'https://res.cloudinary.com/daxjhteb5/image/upload/v1779122804/WhatsApp_Image_2026-05-03_at_00.47.51_1_pypvhx.jpg'
 
 const STATS = [
   { icon: '🎵', num: '800+', label: 'Songs in the Vault' },
@@ -22,8 +22,8 @@ const PLATFORMS = [
 
 const CARDS = [
   { icon: '🎭', title: 'The Sound', desc: 'GM James describes his style as "an artist who rhymes words." Raw, direct, and emotionally charged — every bar means something.' },
-  { icon: '🧠', title: 'The Process', desc: 'Consistency over hype. 800+ songs in the vault prove that the best artists never stop creating — they grind in silence.' },
-  { icon: '💡', title: 'What Fans Can Expect', desc: 'More music. More stories. More truth. GM James is different because every record is lived experience — not imagination.' },
+  { icon: '🧠', title: 'The Process', desc: 'Consistency over hype. 800+ songs in the vault prove that the best artists never stop creating. They grind in silence.' },
+  { icon: '💡', title: 'What Fans Can Expect', desc: 'More music. More stories. More truth. GM James is different because every record is lived experience, not imagination.' },
 ]
 
 export default function AboutSection() {
