@@ -59,7 +59,7 @@ export default function AboutSection() {
                 { d: 0.2, text: <>Born <strong style={{color:'#fff'}}>James Reuschle</strong> in South Florida, music was the foundation from middle school. As professional life grew, writing and recording moved quietly behind the scenes — but the craft never stopped.</> },
                 { d: 0.25, text: <>In 2020, James officially stepped into the name <strong style={{color:'#fff'}}>GM James</strong>, releasing <em style={{color:'#fff'}}>Dear Bad Cops</em> with Boom Marley — a record that spoke directly to the social injustices of the moment.</> },
                 { d: 0.3, text: <>Everything shifted in 2024 following the passing of his mother. Confronted with the reality that time isn't promised, GM James went all in — committing to releasing <strong style={{color:'#fff'}}>a song a week for over a year</strong>, dropping 98 records and building a catalog of over 800 songs.</> },
-                { d: 0.35, text: <>In late 2025, GM James released <strong style={{color:'var(--neon-green)'}}>Till Next Time</strong> — a 10-song, 36-minute short film and album documenting both the creation process and the raw emotion behind it.</> },
+                { d: 0.35, text: <>On January 5th 2026, GM James released <strong style={{color:'var(--neon-green)'}}>Till Next Time</strong> — a 10-song, 36-minute short film and album documenting both the creation process and the raw emotion behind it.</> },
                 { d: 0.4, text: <em style={{color:'var(--purple-light)'}}>"There are no goodbyes, only continuations. GM James signs off the same way every time — Till Next Time."</em> },
               ].map((item, i) => (
                 <Reveal key={i} direction="right" delay={item.d}>

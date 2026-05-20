@@ -68,7 +68,7 @@ export default function MusicSection() {
             </Reveal>
             <Reveal direction="right" delay={0.2}>
               <p style={{ marginTop: 8, fontSize: '0.87rem', color: 'var(--text-muted)', maxWidth: 420, lineHeight: 1.7 }}>
-                From the vault of GM James. 98 releases and counting. Real stories, raw rhymes, and an unmatched work ethic.
+                From the vault of GM James. 100 releases and counting. Real stories, raw rhymes, and an unmatched work ethic.
               </p>
             </Reveal>
           </div>
