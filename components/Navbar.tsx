@@ -1,15 +1,17 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Music, ExternalLink } from 'lucide-react'
+import { Menu, X, CloudLightning, ExternalLink } from 'lucide-react'
+
+const SPOTIFY = 'https://open.spotify.com/artist/7k9mgUyBa834ecy9zkKHHT'
 
 const NAV_LINKS = [
-  { label: 'Music',   href: '#music' },
-  { label: 'About',   href: '#about' },
-  { label: 'Album',   href: '#album' },
-  { label: 'Shows',   href: '#shows' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Connect', href: '#connect' },
+  { label: 'Music',    href: '#music' },
+  { label: 'About',    href: '#about' },
+  { label: 'Themes',   href: '#themes' },
+  { label: 'Timeline', href: '#timeline' },
+  { label: 'Videos',   href: '#videos' },
+  { label: 'Booking',  href: '#booking' },
 ]
 
 export default function Navbar() {
@@ -36,9 +38,9 @@ export default function Navbar() {
         style={{
           position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
           height: 68,
-          background: scrolled ? 'rgba(5,5,5,0.95)' : 'transparent',
+          background: scrolled ? 'rgba(5,11,24,0.85)' : 'transparent',
           backdropFilter: scrolled ? 'blur(24px)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(193,18,31,0.18)' : '1px solid transparent',
+          borderBottom: scrolled ? '1px solid rgba(59,130,246,0.18)' : '1px solid transparent',
           boxShadow: scrolled ? '0 4px 40px rgba(0,0,0,0.6)' : 'none',
           transition: 'all 0.3s',
           display: 'flex', alignItems: 'center',
@@ -52,23 +54,24 @@ export default function Navbar() {
           <button
             onClick={() => scrollTo('#home')}
             style={{
-              fontFamily: "'Syne', sans-serif", fontWeight: 900, fontSize: '1.15rem',
+              fontFamily: "'Syne', sans-serif", fontWeight: 900, fontSize: '1.1rem',
               display: 'flex', alignItems: 'center', gap: 8,
               background: 'none', border: 'none', cursor: 'pointer', color: '#fff',
             }}
           >
             <span style={{
-              width: 32, height: 32, background: 'var(--neon-green)',
-              borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center',
+              width: 32, height: 32, background: 'var(--accent)',
+              borderRadius: 9, display: 'flex', alignItems: 'center', justifyContent: 'center',
+              boxShadow: '0 4px 16px rgba(59,130,246,0.4)', flexShrink: 0,
             }}>
-              <Music size={16} color="#fff" />
+              <CloudLightning size={16} color="#fff" />
             </span>
-            <span>GM</span>
-            <span style={{ color: 'var(--neon-green)' }}>James</span>
+            <span style={{ whiteSpace: 'nowrap' }}>Kalm</span>
+            <span className="logo-full" style={{ color: 'var(--accent-2)', whiteSpace: 'nowrap' }}>Before the Storm</span>
           </button>
 
           {/* Desktop links */}
-          <ul style={{ display: 'flex', gap: 28, listStyle: 'none', margin: 0, padding: 0 }}
+          <ul style={{ display: 'flex', gap: 26, listStyle: 'none', margin: 0, padding: 0 }}
               className="hidden-mobile">
             {NAV_LINKS.map(link => (
               <li key={link.href}>
@@ -90,16 +93,13 @@ export default function Navbar() {
 
           {/* CTA */}
           <div style={{ display: 'flex', gap: 10, alignItems: 'center' }} className="hidden-mobile">
-            <a
-              href="https://open.spotify.com/artist/1vOQzKkm4fV56IzcaMHVoo?si=GwoLW4M8SD-6Ms1IdFnsuQ"
-              target="_blank" rel="noopener noreferrer" className="btn-sm-purple"
-            >
-              Stream Now <ExternalLink size={12} />
+            <a href={SPOTIFY} target="_blank" rel="noopener noreferrer" className="btn-sm-purple">
+              Listen Now <ExternalLink size={12} />
             </a>
-            <a href="mailto:Jayreuschle@yahoo.com" className="btn-green glow-pulse"
+            <button onClick={() => scrollTo('#booking')} className="btn-green glow-pulse"
                style={{ fontSize: '0.78rem', padding: '9px 18px' }}>
               Book Now
-            </a>
+            </button>
           </div>
 
           {/* Burger */}
@@ -123,7 +123,7 @@ export default function Navbar() {
             transition={{ duration: 0.22 }}
             style={{
               position: 'fixed', top: 68, left: 0, right: 0, zIndex: 99,
-              background: 'rgba(5,5,5,0.98)', backdropFilter: 'blur(24px)',
+              background: 'rgba(5,11,24,0.98)', backdropFilter: 'blur(24px)',
               borderBottom: '1px solid var(--border)', padding: '24px',
               display: 'flex', flexDirection: 'column', gap: 20,
             }}
@@ -142,23 +142,25 @@ export default function Navbar() {
               </button>
             ))}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 8 }}>
-              <a href="https://open.spotify.com/artist/1vOQzKkm4fV56IzcaMHVoo"
-                 target="_blank" rel="noopener noreferrer" className="btn-purple"
-                 style={{ justifyContent: 'center' }}>Stream on Spotify</a>
-              <a href="mailto:Jayreuschle@yahoo.com" className="btn-green"
-                 style={{ justifyContent: 'center' }}>Book GM James</a>
+              <a href={SPOTIFY} target="_blank" rel="noopener noreferrer" className="btn-purple"
+                 style={{ justifyContent: 'center' }}>Listen on Spotify</a>
+              <button onClick={() => scrollTo('#booking')} className="btn-green"
+                 style={{ justifyContent: 'center' }}>Book a Performance</button>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
       <style>{`
-        @media(max-width: 768px) {
+        @media(max-width: 900px) {
           .hidden-mobile { display: none !important; }
           .show-mobile { display: block !important; }
         }
-        @media(min-width: 769px) {
+        @media(min-width: 901px) {
           .show-mobile { display: none !important; }
+        }
+        @media(max-width: 520px) {
+          .logo-full { display: none !important; }
         }
       `}</style>
     </>

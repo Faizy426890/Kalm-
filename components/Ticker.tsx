@@ -1,14 +1,14 @@
 'use client'
 
 const ITEMS = [
-  'GM James · Till Next Time · Out Now',
-  '98 Records Dropped In A Single Year',
-  '800+ Songs Strong In The Vault',
-  'Stream On Spotify · Apple Music · Tidal · YouTube',
-  'Booking: Jayreuschle@yahoo.com',
-  "South Florida's Hardest Working Rapper",
-  'New Album: Till Next Time · 10 Songs · 36 Minutes',
-  'Follow @gmjames561 On Instagram & TikTok',
+  'Kalm Before the Storm · Conscious Hip-Hop',
+  'Soul Searchin · Out Now',
+  'Top 10 In Listens On Spinz 92.9',
+  'Excellent Review From MusicReviewWorld',
+  'St. Louis, Missouri · Storyteller · Lyricist',
+  'Stream On Spotify · YouTube',
+  'Upcoming Mixtape: Note 2 Self',
+  'Follow @kalmsyc1deep On Instagram',
 ]
 
 export default function Ticker() {

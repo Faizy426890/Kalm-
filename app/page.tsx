@@ -3,9 +3,12 @@ import Hero from '@/components/Hero'
 import Ticker from '@/components/Ticker'
 import MusicSection from '@/components/MusicSection'
 import AboutSection from '@/components/AboutSection'
-import AlbumSection from '@/components/AlbumSection'
-import ShowsSection from '@/components/ShowsSection'
-import ConnectSection from '@/components/ConnectSection'
+import FeaturedSection from '@/components/FeaturedSection'
+import ThemesSection from '@/components/ThemesSection'
+import TimelineSection from '@/components/TimelineSection'
+import VideosSection from '@/components/VideosSection'
+import SocialSection from '@/components/SocialSection'
+import BookingSection from '@/components/BookingSection'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -19,9 +22,12 @@ export default function Home() {
         </div>
         <MusicSection />
         <AboutSection />
-        <AlbumSection />
-        <ShowsSection />
-        <ConnectSection />
+        <FeaturedSection />
+        <ThemesSection />
+        <TimelineSection />
+        <VideosSection />
+        <SocialSection />
+        <BookingSection />
       </main>
       <Footer />
     </>
